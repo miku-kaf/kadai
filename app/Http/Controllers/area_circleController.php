@@ -9,6 +9,6 @@ class area_circleController extends Controller
     public function index(Request $request)
     {
         $num=$request->input("number");
-        return $num*$num*3.14;
+        return pow($num,2)*3.14;
     }
 }
